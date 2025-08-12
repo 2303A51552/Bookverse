@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookverse - Reading List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .site-name {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #a37854;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      color: #a37854;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .reading-list {
+      text-align: center;
+    }
+
+    .heading {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .subheading {
+      margin: 10px 0 30px;
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .book-carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .book-container {
+      display: flex;
+      gap: 20px;
+      overflow: hidden;
+      max-width: 80%;
+      scroll-behavior: smooth;
+    }
+
+    .book {
+      text-align: center;
+      min-width: 150px;
+      flex-shrink: 0;
+    }
+
+    .book img {
+      width: 150px;
+      height: 230px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .book p {
+      font-size: 1em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .arrow {
+      background-color: #a37854;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 1.5em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .arrow:hover {
+      background-color: #8a6343;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="site-name">BOOKVERSE</h1>
+    <nav>
+      <ul>
+        <li><a href="Home page.html">HOME</a></li>
+        <li><a href="Code1(discover page).html">DISCOVER</a></li>
+        <li><a href="Community.html">COMMUNITY</a></li>
+        <li><a href="#" class="active">PROFILE</a></li>
+        <li><a href="Contact page.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="reading-list">
+      <h1 class="heading">READING LIST</h1>
+      <p class="subheading">
+        Your interests here at a glance. Here is a list of books that are waiting to be read by you.
+      </p>
+      <div class="book-carousel">
+        <div class="book-container">
+          <div class="book">
+            <img src="https://i.pinimg.com/236x/d5/75/f8/d575f84939dff811713ef34ad216ca36.jpg" alt="The Mountain is You">
+            <p>The mountain is you</p>
+          </div>
+          <div class="book">
+            <img src="https://i.pinimg.com/236x/c7/82/ff/c782ff61faaab0a2ee7f729eae138926.jpg" alt="Ikigai">
+            <p>Ikigai</p>
+          </div>
+          <div class="book">
+            <img src="https://i.pinimg.com/736x/15/25/99/1525997aa7e0d09f97a8d2cda4374e92.jpg" alt="Verity">
+            <p>Verity</p>
+          </div>
+          <div class="book">
+            <img src="https://i.pinimg.com/236x/be/a1/0e/bea10e531b15e0a07e11aee7738d643c.jpg" alt="The Silent Patient">
+            <p>The silent patient</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+</body>
+</html>

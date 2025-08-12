@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookverse</title>
+  <link rel="DISCOVER" href="Code1(discover page).html">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #a37854;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      color: #a37854;
+    }
+
+    .hero {
+      position: relative;
+      height: 300px;
+      background-image: url('https://wallpapers.com/images/hd/dark-library-aesthetic-book-desktop-ynuwrezn6ntptm8p.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Lobster", "Arial", cursive;
+    }
+
+    .hero h1 {
+      color: #fff;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .top-picks {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .top-picks h2 {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .search-bar {
+      margin: 20px auto;
+      max-width: 500px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .read-now {
+      background-color: #a37854;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+
+    .read-now:hover {
+      background-color: #8a6343;
+    }
+
+    .book-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .book {
+      text-align: center;
+      position: relative;
+    }
+
+    .book img {
+      width: 150px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .book:hover::after {
+      content: attr(data-title);
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 0.9em;
+      white-space: nowrap;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #a37854;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background-color: #8a6343;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <h1>BOOKVERSE</h1>
+        </div>
+        <ul>
+          <li><a href="#" class="active">HOME</a></li>
+          <li><a href="Code1(discover page).html">DISCOVER</a></li>
+          <li><a href="Community.html">COMMUNITY</a></li>
+          <li><a href="Profile page.html">PROFILE</a></li>
+          <li><a href="Contact page.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Dive into the Universe of Books</h1>
+      </div>
+    </section>
+
+    <section class="top-picks">
+      <h2>TOP PICKS!</h2>
+      <div class="search-bar">
+        <input type="text" id="search" placeholder="Search for books...">
+      </div>
+      <a href="Readmore.html">
+        <button class="read-now">READ NOW</button>
+      </a>
+      <div class="book-grid" id="book-grid">
+        <div class="book" data-title="Tress of the Emerald Sea">
+          <img src="https://i.pinimg.com/736x/cf/69/05/cf690570cad63dd3acc482f93130f4df.jpg" alt="Tress of the Emerald Sea">
+        </div>
+        <div class="book" data-title="The Silent Patient">
+          <img src="https://i.pinimg.com/736x/8a/a1/0f/8aa10f2a7020b5540ee6e92f6f98f19a.jpg" alt="The Silent Patient">
+        </div>
+        <div class="book" data-title="Verity">
+          <img src="https://i.pinimg.com/736x/15/25/99/1525997aa7e0d09f97a8d2cda4374e92.jpg" alt="Verity">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="back-to-top">↑</button>
+
+  <script>
+   
+    window.onload = function() {
+      const hours = new Date().getHours();
+      let greeting = "Hello!";
+      if (hours < 12) greeting = "Good Morning!";
+      else if (hours < 18) greeting = "Good Afternoon!";
+      else greeting = "Good Evening!";
+
+      const heroOverlay = document.querySelector('.hero-overlay');
+      const greetingElement = document.createElement('p');
+      greetingElement.style.fontSize = '1.5em';
+      greetingElement.style.color = '#fff';
+      greetingElement.style.marginTop = '10px';
+      greetingElement.textContent = greeting;
+      heroOverlay.appendChild(greetingElement);
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll('nav ul li a');
+      const currentPage = location.pathname.split('/').pop();
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    document.getElementById("search").addEventListener("input", function() {
+      const filter = this.value.toLowerCase();
+      const books = document.querySelectorAll('.book');
+      books.forEach(book => {
+        const title = book.getAttribute('data-title').toLowerCase();
+        if (title.includes(filter)) {
+          book.style.display = "block";
+        } else {
+          book.style.display = "none";
+        }
+      });
+    });
+
+    const backToTopButton = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+</html>

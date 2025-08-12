@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookverse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">BOOKVERSE</div>
+    <nav>
+      <ul>
+        <li><a href="Home page.html">HOME</a></li>
+        <li><a href="Code1(discover page).html">DISCOVER</a></li>
+        <li><a href="#" class="active">COMMUNITY</a></li>
+        <li><a href="Profile page.html">PROFILE</a></li>
+        <li><a href="Contact page.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <h1>Book Communities you are a part of</h1>
+    
+    <div class="main-content">
+      <div class="community-list">
+        <div class="community-card">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/044/280/984/small_2x/stack-of-books-on-a-brown-background-concept-for-world-book-day-photo.jpg" alt="Community">
+          <div class="community-info">
+            <h2>The Literary Lounge</h2>
+            <p>2536 members</p>
+            <p>Admin: Jenna</p>
+            <p class="description">Read stories and express how you feel!</p>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_841229-1644.jpg" alt="Community">
+          <div class="community-info">
+            <h2>Story Tellers</h2>
+            <p>3568 members</p>
+            <p>Admin: Lowen</p>
+            <p class="description">Let the world know your story!</p>
+          </div>
+        </div>
+
+        <div class="community-card">
+            <img src="https://img.freepik.com/premium-photo/throwing-books-flying-books-isolated-white-background-with-clipping-path_534373-9604.jpg" alt="Community">
+            <div class="community-info">
+              <h2>Novel Network</h2>
+              <p>4521 members</p>
+              <p>Admin: Alekhya</p>
+              <p class="description">Improve your networks by connecting with readers!</p>
+            </div>
+          </div>
+
+          <div class="community-card">
+            <img src="https://media.istockphoto.com/id/928591864/photo/education-comes-first.jpg?s=612x612&w=0&k=20&c=oEJjve4Ex96F3BHp9y7p-7uyG42CohGE9Mr39gpRSvI=" alt="Community">
+            <div class="community-info">
+              <h2>Pages & Pals</h2>
+              <p>7851 members</p>
+              <p>Admin: Lune</p>
+              <p class="description">Find your pals, thank your pages.</p>
+            </div>
+          </div>
+      </div>
+      
+      <aside class="suggested-communities">
+        <h3>Here’s a few more communities you can enjoy being a part of based on your recent activity</h3>
+        <div class="community-small">
+          <img src="https://wallpapercave.com/wp/wp4430596.jpg" alt="Community">
+          <div class="suggestion-info">
+            <p class="community-name">Bound by Books</p>
+            <p class="members-count">2885 members</p>
+          </div>
+        </div>
+        <div class="community-small">
+          <img src="https://getwallpapers.com/wallpaper/full/d/d/6/165874.jpg" alt="Community">
+          <div class="suggestion-info">
+            <p class="community-name">The Reading Room</p>
+            <p class="members-count">4526 members</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <p>© 2024 Bookverse. All rights reserved.</p>
+  </footer>
+</body>
+<style>
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #a37854;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; 
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+.navbar ul li a.active {
+  color: #a68a63;
+}
+
+/* Main Container */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.community-list {
+  flex: 3;
+}
+
+.community-card {
+  display: flex;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.community-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.community-info h2 {
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.community-info .description {
+  color: #777777;
+}
+
+/* Suggested Communities */
+.suggested-communities {
+  flex: 2;
+  margin-left: 20px;
+}
+
+.suggested-communities h3 {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.community-small {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.community-small img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.suggestion-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.members-count {
+  font-size: 0.9em;
+  color: #777;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2d2d2d;
+  color: white;
+  margin-top: 20px;
+}
+</style>
+</html>
